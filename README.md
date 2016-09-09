@@ -27,7 +27,8 @@ Node.js module to export MS SQL database to CSV
         ignoreList: ["sysdiagrams"], // tables to ignore
         tables: [],                  // empty to export all the tables
         outputDirectory: 'somedir',
-        log: true
+        log: true,
+        header: false                // true to export column names as csv header
     };
 
     mssqlExport(dbconfig, options).then(function(){
